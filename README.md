@@ -1,13 +1,20 @@
-# Mirko Bjelic - Personal Portfolio Website
+# Personal Portfolio Website
 
 ## Overview
 A professional personal portfolio website showcasing my skills, experience, and professional journey as a Database Administrator.
 
-## Technologies Used
+## Recent Updates
+- Added cookie consent management
+- Implemented responsive design
+- Enhanced interests section
+- Added Flightradar24 profile link in travel section
+
+## Technologies
 - HTML5
-- CSS3 (Modern, responsive design)
+- CSS3
 - Vanilla JavaScript
-- Font Awesome for icons
+- Responsive Design
+- Web Accessibility
 
 ## Features
 - Responsive design
@@ -40,6 +47,29 @@ Implemented a comprehensive cookie consent mechanism that:
 - Respects user privacy
 - Prevents tracking when declined
 - Follows GDPR guidelines
+
+## Interests
+### Homelab
+- Technologies:
+  - Docker Containerization
+  - Wireguard VPN
+  - PiHole DNS Management
+  - Self-hosting solutions
+
+### Web Development
+- Portfolio website as a personal project
+- Exploring modern web technologies
+- Focusing on responsive design and user experience
+
+### Travel
+- Countries Visited: 42
+- Continents Explored: 6/7
+- Tracking travel experiences via Flightradar24
+
+## Personal Projects
+- Portfolio Website
+- Network Infrastructure
+- Self-hosting Solutions
 
 ## Local Development
 1. Clone the repository

@@ -1181,3 +1181,49 @@ footer {
 .close-btn:hover {
     background-color: var(--delft-blue);
 }
+
+.flight-profile-btn {
+    display: inline-block;
+    margin-left: auto;
+    padding: 0.3rem 0.75rem;
+    background-color: var(--true-blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.flight-profile-btn:hover {
+    background-color: var(--sapphire);
+}
+
+.flight-profile-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.flight-profile-preview {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 70px;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.flight-profile-preview img {
+    width: 320px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.flight-profile-wrapper:hover .flight-profile-preview {
+    display: block;
+}
