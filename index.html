@@ -8,6 +8,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div id="cookie-consent-popup" class="cookie-consent-popup">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <h3>🍪 Cookie Consent</h3>
+                <p>This website uses cookies to improve user experience and analyze site traffic. Please choose your cookie preferences.</p>
+            </div>
+            <div class="cookie-consent-actions">
+                <button id="accept-cookies" class="accept-btn">Accept All Cookies</button>
+                <button id="manage-cookies" class="manage-btn">Manage Preferences</button>
+                <button id="decline-cookies" class="decline-btn">Decline Cookies</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookie-preferences-modal" class="cookie-preferences-modal">
+        <div class="cookie-preferences-content">
+            <h2>Cookie Preferences</h2>
+            <p>Customize your cookie settings:</p>
+            <form id="cookie-preferences-form">
+                <div class="cookie-option">
+                    <input type="checkbox" id="necessary-cookies" name="necessary-cookies" checked disabled>
+                    <label for="necessary-cookies">Necessary Cookies (Always On)</label>
+                    <p>These cookies are essential for the website to function properly.</p>
+                </div>
+                <div class="cookie-option">
+                    <input type="checkbox" id="analytics-cookies" name="analytics-cookies">
+                    <label for="analytics-cookies">Analytics Cookies</label>
+                    <p>Help us understand how users interact with our website.</p>
+                </div>
+                <div class="cookie-option">
+                    <input type="checkbox" id="marketing-cookies" name="marketing-cookies">
+                    <label for="marketing-cookies">Marketing Cookies</label>
+                    <p>Used to track your online activity and show personalized ads.</p>
+                </div>
+                <div class="cookie-preferences-actions">
+                    <button type="button" id="save-preferences" class="save-btn">Save Preferences</button>
+                    <button type="button" id="close-preferences" class="close-btn">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <nav>
         <div class="container">
             <div class="logo">MB</div>
@@ -139,20 +181,20 @@
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">SAP HANA</span>
-                                <span class="skill-percentage">6/10</span>
+                                <span class="skill-percentage">5/10</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-percentage="60"></div>
+                                <div class="skill-progress" data-percentage="50"></div>
                             </div>
                         </div>
                         
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">PostgreSQL</span>
-                                <span class="skill-percentage">5/10</span>
+                                <span class="skill-percentage">4/10</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-percentage="50"></div>
+                                <div class="skill-progress" data-percentage="40"></div>
                             </div>
                         </div>
                     </div>
@@ -471,7 +513,7 @@
                 <div class="contact-card">
                     <div class="contact-icon">📧</div>
                     <h3>Email</h3>
-                    <p><a href="mailto:contact@example.com">contact@example.com</a></p>
+                    <p><a href="mailto:contact@mbjelic.de">contact@mbjelic.de</a></p>
                 </div>
                 
                 <div class="contact-card">
@@ -489,6 +531,25 @@
         </div>
     </section>
 
+    <section id="imprint" class="imprint">
+        <div class="container">
+            <h2>Imprint</h2>
+            <div class="imprint-content">
+                <p><strong>Mirko Bjelic</strong><br>
+                Leimbacher Str. 65<br>
+                42281  Wuppertal, Germany</p>
+                
+                <p>Contact:<br>
+                Email: webmaster@mbjelic.de<br>
+                Phone: +49 (0) 1575 4669941</p>
+                
+                <p>Disclaimer: This is a personal portfolio website. All rights reserved. &copy; 2024 Mirko Bjelic</p>
+                
+                <p>Legal Notice: This website is for professional presentation purposes. The views and opinions expressed are solely those of the author.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Mirko Bjelic. All rights reserved.</p>
@@ -496,5 +557,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="cookie-consent.js"></script>
 </body>
 </html>
